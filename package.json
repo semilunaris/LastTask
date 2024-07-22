@@ -1,0 +1,28 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "proxy-server.js",
+  "scripts": {
+    "go": "node proxy-server.js",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "http-proxy": "^1.18.1",
+    "notiflix": "^3.2.7",
+    "simplelightbox": "^2.14.3"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,77 @@
+/* Общие стили для body */
+body {
+  background-color: #1a1a2e; /* Темно-синий фон */
+  color: #e0e0e0; /* Светлый текст */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Стили для формы поиска */
+.search-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start; /* Смещение влево */
+  width: 90%;
+  max-width: 600px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px; /* Скругленные углы слева */
+  outline: none;
+  font-size: 16px;
+  background-color: #0f3460; /* Темно-синий фон для инпута */
+  color: #e0e0e0; /* Светлый текст для инпута */
+}
+
+.search-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 4px 4px 0; /* Скругленные углы справа */
+  background-color: #e94560; /* Красная кнопка */
+  color: #e0e0e0; /* Светлый текст для кнопки */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-form button:hover {
+  background-color: #d62839; /* Темно-красный при наведении */
+}
+
+/* Стили для галереи */
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.photo-card {
+  background-color: #16213e; /* Темно-синий фон для карточек */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info-item {
+  margin: 5px 0;
+  font-size: 14px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <form class="js-search-form">
+        <input type="text" name="query" placeholder="Введите имя или номер покемона">
+        <button type="submit">Поиск</button>
+    </form>
+    <div id="container"></div>
+    <br>
+    <br>
+    <!-- new lesoon -->
+    <form class="form-inline search-form js-search-form1">
+       <div class="form-group mx-sm-3 mb-2">
+        <label for="searchQuery" class="sr-only">что ищем?</label><br>
+        <input 
+        type="text" 
+        class="form-control" 
+        name="query"
+         placeholder="что ищем?"
+         autocomplete="off">
+        <br>
+       </div>
+        <button type="submit" class="button btn vtn-primaty ab-2">Поиск</button>
+    </form>
+       
+      <ul class="articles js-articles-container"></ul>
+       <button 
+       type="button"
+       class="button btn btn-primary button"
+       data-action="load-more">
+       
+       <span
+       class="spinen-border loading"
+       role="=status"
+       aria-hidden="true">
+    
+           
+      </span> 
+    <span class="label">показать еще</span>
+      </button>
+
+      <button class="button button1">
+        <span class="text">Загрузить</span>
+        <div class="spinner"></div>
+    </button>
+
+
+
+    <script id="pokemon-template" type="x-tmpl-mustache">
+        <ul>
+            {{#pokemon}}
+                <li>{{name}}</li> <!-- Измените на основе структуры данных, возвращаемых PokeAPI -->
+            {{/pokemon}}
+        </ul>
+    </script>
+
+    <script src="./backend.js"></script>
+</body>
+</html>
